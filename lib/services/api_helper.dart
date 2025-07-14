@@ -30,7 +30,8 @@ class ApiHelper {
 
   /// Fetches the current device location and stores it in [lat] and [lon].
   static Future<void> fetchLocation() async {
-    final location = await getLocation();
+    final location = await getLocation(
+    );
     lat = location.latitude;
     lon = location.longitude;
   }

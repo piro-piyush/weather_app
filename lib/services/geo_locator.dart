@@ -14,5 +14,10 @@ Future<Position> getLocation() async {
       "Location permissions are permanently denied, we cannot request permissions.",
     );
   }
-  return Geolocator.getCurrentPosition();
+  return Geolocator.getCurrentPosition(
+    locationSettings: LocationSettings(
+      accuracy: LocationAccuracy.high,
+      timeLimit: Duration(seconds: 60),
+    ),
+  );
 }
