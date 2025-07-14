@@ -93,7 +93,7 @@ Used for:
 1. **Clone the repository**
 ```bash
 git clone https://github.com/piro-piyush/weather_app.git
-cd weather-app
+cd weather_app
 ```
 
 2. **Add your OpenWeatherMap API key** in `constants.dart`:
